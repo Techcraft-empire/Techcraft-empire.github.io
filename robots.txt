@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techcraft-empire.github.io/sitemap.xml

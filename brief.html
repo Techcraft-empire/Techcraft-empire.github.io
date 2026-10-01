@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101b2d" />
+    <title>Rancang projek anda — TechCraft Empire</title>
+    <meta
+      name="description"
+      content="Sediakan ringkasan keperluan website anda untuk berbincang dengan TechCraft Empire."
+    />
+    <link
+      rel="canonical"
+      href="https://techcraft-empire.github.io/brief.html"
+    />
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="assets/company.css" />
+    <script src="assets/company.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 760px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding-block: 17px;
+          }
+          .nav nav {
+            display: flex;
+            position: static;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            box-shadow: none;
+            border: 0;
+            gap: 15px;
+          }
+          .nav nav > a {
+            padding: 6px 0;
+          }
+          .nav .nav-action {
+            margin: 0;
+            padding: 7px 10px;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Langkau ke kandungan</a>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="./"
+          ><img src="assets/mark.svg" width="38" height="38" alt="" /><span
+            >TechCraft<span class="brand-second">Empire</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+        <nav id="main-nav" aria-label="Navigasi utama">
+          <a href="./#servis">Servis</a><a href="./#contoh">Portfolio</a
+          ><a href="./#cara-kerja">Cara kerja</a
+          ><a href="./" class="nav-action">Kembali ke utama ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <div class="brief-header">
+        <p class="eyebrow">MULAKAN DENGAN IDEA ANDA</p>
+        <h1>Apa yang anda<br />mahu bina?</h1>
+        <p>
+          Beberapa maklumat ringkas membantu kita memulakan perbincangan dengan
+          lebih jelas.
+        </p>
+      </div>
+      <div class="brief-layout">
+        <div>
+          <form id="brief-form" class="brief-form">
+            <div class="field">
+              <label for="business">Nama atau jenis perniagaan</label
+              ><input
+                id="business"
+                name="business"
+                required
+                maxlength="100"
+                placeholder="Contoh: café, servis fotografi, kedai dalam talian"
+              />
+            </div>
+            <div class="field">
+              <label for="type">Jenis website</label
+              ><select id="type" name="type">
+                <option>Website perniagaan</option>
+                <option>Landing page</option>
+                <option>Portfolio atau katalog</option>
+                <option>Belum pasti — perlukan cadangan</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="budget">Anggaran bajet</label
+                ><select id="budget" name="budget">
+                  <option>Ingin dapatkan sebut harga dahulu</option>
+                  <option>Bawah RM1,000</option>
+                  <option>RM1,000–RM3,000</option>
+                  <option>RM3,000 ke atas</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="timeline">Sasaran masa</label
+                ><select id="timeline" name="timeline">
+                  <option>Fleksibel</option>
+                  <option>Dalam sebulan</option>
+                  <option>1–3 bulan</option>
+                  <option>Masih dalam perancangan</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="details">Apa yang website ini perlu lakukan?</label
+              ><textarea
+                id="details"
+                name="details"
+                rows="5"
+                required
+                maxlength="2000"
+                placeholder="Ceritakan servis anda, siapa pelanggan anda dan fungsi yang diperlukan."
+              ></textarea>
+            </div>
+            <button class="button" type="submit">
+              Sediakan ringkasan <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note">
+              Maklumat diproses pada peranti anda sahaja. Borang ini menyediakan
+              ringkasan untuk anda salin atau muat turun; ia tidak menghantar
+              pertanyaan.
+            </p>
+            <noscript
+              ><p>
+                Sila aktifkan JavaScript untuk menjana ringkasan, atau salin
+                butiran anda secara manual.
+              </p></noscript
+            >
+          </form>
+          <section
+            id="brief-result"
+            class="result-panel"
+            hidden
+            aria-labelledby="result-heading"
+          >
+            <h2 id="result-heading" tabindex="-1">Ringkasan anda sedia.</h2>
+            <p>
+              Salin dan hantar melalui saluran anda berhubung dengan TechCraft
+              Empire.
+            </p>
+            <label class="field" for="brief-text">Ringkasan projek</label
+            ><textarea id="brief-text" readonly></textarea>
+            <div class="actions">
+              <button id="copy-brief" class="button" type="button">
+                Salin ringkasan</button
+              ><button id="download-brief" class="button outline" type="button">
+                Muat turun .txt
+              </button>
+            </div>
+            <p id="brief-status" class="result-status" role="status"></p>
+          </section>
+        </div>
+        <aside class="brief-aside">
+          <p class="eyebrow">SEBELUM KITA BERMULA</p>
+          <h2>Tak perlu tahu<br />semua jawapan.</h2>
+          <p>
+            Ceritakan perkara yang paling penting. Kita boleh perincikan
+            selebihnya ketika berbincang.
+          </p>
+          <ul>
+            <li>Apa yang perniagaan anda tawarkan?</li>
+            <li>Siapa yang akan menggunakan website?</li>
+            <li>Apa tindakan yang anda mahu mereka ambil?</li>
+          </ul>
+          <p>
+            Pilihan bajet ialah panduan perbincangan sahaja. Harga dan tempoh
+            projek bergantung pada skop yang dipersetujui.
+          </p>
+          <a class="text-link" href="./#contoh">Lihat portfolio dahulu ↗</a>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-bottom">
+        <span>© 2026 TechCraft Empire</span
+        ><a href="./">Kembali ke halaman utama ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

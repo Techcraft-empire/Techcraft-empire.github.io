@@ -1,35 +1,456 @@
 <!doctype html>
 <html lang="ms">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#09152b">
-  <meta name="description" content="Techcraft Empire menyediakan reka bentuk dan pembangunan website yang kemas, mesra telefon dan mudah digunakan.">
-  <title>Techcraft Empire — Website untuk perniagaan</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309152b'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='31' font-family='Arial' font-weight='bold' fill='white'%3ETC%3C/text%3E%3C/svg%3E">
-  <style>
-    :root{--navy:#09152b;--ink:#14233d;--blue:#1267ed;--muted:#607089;--line:#dce5f0;--surface:#f5f8fc;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--white);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,a{outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-    .topbar{border-bottom:1px solid var(--line);background:#fff}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-size:1.05rem;font-weight:760;letter-spacing:-.025em}.brand-mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#09152b;color:#fff;font-size:.9rem;font-weight:800;letter-spacing:-.08em}.navlinks{display:flex;align-items:center;gap:30px;font-size:.92rem;font-weight:620}.navlinks a:not(.nav-cta):hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border-radius:10px;padding:10px 20px;font-weight:700}.nav-cta,.btn.primary{background:var(--blue);color:white}.nav-cta:hover,.btn.primary:hover{background:#0755d4}.btn.secondary{border:1px solid #b8c8df;background:#fff;color:var(--ink)}.btn.secondary:hover{border-color:var(--blue);color:var(--blue)}
-    .hero{background:linear-gradient(135deg,#f8fbff 0%,#eef4ff 64%,#f7faff 100%);border-bottom:1px solid var(--line)}.hero-inner{display:grid;grid-template-columns:1fr .92fr;align-items:center;gap:64px;min-height:610px;padding:80px 0}.eyebrow{margin:0 0 20px;color:#1459ba;font-size:.8rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{margin:0;max-width:660px;font-size:clamp(2.5rem,5.3vw,4.65rem);line-height:1.08;letter-spacing:-.055em;color:var(--navy)}.hero .lead{max-width:550px;margin:24px 0 30px;color:#4a5972;font-size:1.12rem;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px}.note{margin:20px 0 0;color:#687892;font-size:.85rem}
-    .visual{position:relative;padding:18px;border:1px solid #d8e4f4;border-radius:20px;background:white;box-shadow:0 28px 70px #10274a1c;transform:rotate(1deg)}.visual:before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:#b5d5ff;filter:blur(65px);right:-30px;top:-30px;z-index:-1}.browser-top{display:flex;align-items:center;gap:6px;height:28px;border-bottom:1px solid #e5eaf2}.browser-top i{display:block;width:7px;height:7px;background:#c1cfe0;border-radius:50%}.browser-top span{width:46%;height:7px;border-radius:20px;background:#e8eef7;margin:auto}.mock-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 10px}.skeleton{display:block;height:10px;border-radius:99px;background:#cbd8e9}.mock-nav .skeleton:first-child{width:76px;background:var(--navy)}.mock-nav .skeleton:last-child{width:60px;background:#2479f8}.mock-hero{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:10px}.mock-copy{padding:16px 4px}.mock-copy .skeleton{margin-bottom:12px}.mock-copy .skeleton:nth-child(1){width:96%;height:16px;background:var(--navy)}.mock-copy .skeleton:nth-child(2){width:78%;height:16px;background:var(--navy)}.mock-copy .skeleton:nth-child(3){width:87%;margin-top:22px}.mock-copy .skeleton:nth-child(4){width:65%}.mock-copy .skeleton:nth-child(5){width:72px;height:27px;background:var(--blue);margin-top:24px}.mock-image{min-height:178px;border-radius:12px;background:linear-gradient(140deg,#d6e6fa,#a9c9ef)}.mock-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:22px 10px 12px}.mock-card{border:1px solid #dce5f0;border-radius:9px;padding:14px}.mock-card .skeleton{height:7px;margin-bottom:9px}.mock-card .skeleton:first-child{width:60%;background:#33506f}.mock-card .skeleton:last-child{width:80%}
-    section{padding:92px 0}.section-head{max-width:680px;margin-bottom:38px}.section-head h2,.feature h2,.contact h2{margin:0 0 12px;color:var(--navy);font-size:clamp(2rem,3.5vw,3rem);line-height:1.18;letter-spacing:-.04em}.section-head p{margin:0;color:var(--muted)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{border:1px solid var(--line);border-radius:17px;padding:28px;background:white}.service .num{display:inline-block;color:var(--blue);font-size:.83rem;font-weight:800;margin-bottom:26px}.service h3{font-size:1.25rem;line-height:1.3;margin:0 0 12px}.service p{color:var(--muted);margin:0}
-    .portfolio{background:var(--surface)}.feature{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:70px}.feature p{color:var(--muted)}.feature .label{font-size:.8rem;color:#1459ba;font-weight:800;letter-spacing:.15em;text-transform:uppercase;margin:0 0 18px}.feature .btn{margin-top:18px}.preview{background:#13243a;border-radius:18px;padding:13px;box-shadow:0 22px 42px #1127452b}.preview-head{display:flex;gap:5px;padding:3px 0 14px}.preview-head i{width:7px;height:7px;background:#7795b8;border-radius:50%}.preview-art{min-height:270px;background:linear-gradient(150deg,#273e58,#142336);border-radius:9px;display:flex;flex-direction:column;justify-content:end;padding:27px;color:#fff}.preview-art small{font-size:.7rem;color:#f5c887;letter-spacing:.15em;font-weight:800}.preview-art strong{font-family:Georgia,serif;font-size:clamp(1.65rem,3vw,2.3rem);line-height:1.16;max-width:250px;margin:10px 0}
-    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.process div{border-top:2px solid #ccd8e8;padding-top:18px}.process b{color:var(--blue);font-size:.87rem}.process h3{margin:12px 0 8px;font-size:1.15rem}.process p{margin:0;color:var(--muted)}
-    .contact{background:var(--navy);color:white}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:40px}.contact h2{color:white}.contact p{color:#b5c3d7;max-width:580px;margin:0}.contact .btn{background:white;color:var(--navy);white-space:nowrap}.contact .btn:hover{background:#eaf2ff}footer{padding:28px 0;color:#718096;font-size:.82rem}footer .wrap{display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:760px){.nav{min-height:70px}.navlinks a:not(.nav-cta){display:none}.nav-cta{padding:8px 13px;font-size:.85rem;min-height:40px}.hero-inner{grid-template-columns:1fr;gap:38px;min-height:0;padding:65px 0}.visual{max-width:560px;transform:none}.service-grid,.process{grid-template-columns:1fr}.service{padding:24px}.feature{grid-template-columns:1fr;gap:32px}.feature .preview{order:2}.contact-inner{display:block}.contact .btn{margin-top:26px}section{padding:68px 0}footer .wrap{display:block}}
-    @media(max-width:420px){.wrap{width:min(100% - 32px,1120px)}.brand{font-size:.94rem}.brand-mark{width:34px;height:34px}.nav-cta{font-size:.78rem}.mock-image{min-height:132px}.mock-copy{padding:8px 0}.mock-copy .skeleton{margin-bottom:7px}.mock-copy .skeleton:nth-child(1),.mock-copy .skeleton:nth-child(2){height:11px}.mock-copy .skeleton:nth-child(5){margin-top:12px}.mock-card{padding:8px}.mock-card .skeleton{height:5px}}
-  </style>
-</head>
-<body>
-<header class="topbar"><div class="wrap nav"><a class="brand" href="#atas"><span class="brand-mark" aria-hidden="true">TC</span>Techcraft Empire</a><nav class="navlinks" aria-label="Navigasi utama"><a href="#servis">Servis</a><a href="#contoh">Contoh kerja</a><a href="#cara-kerja">Cara kerja</a><a class="nav-cta" href="#hubungi">Lihat contoh</a></nav></div></header>
-<main id="atas">
-  <div class="hero"><div class="wrap hero-inner"><div><p class="eyebrow">Reka bentuk & pembangunan web</p><h1>Website yang kemas untuk langkah seterusnya.</h1><p class="lead">Bina kehadiran online yang mudah difahami pelanggan, selesa dibuka di telefon, dan sesuai dengan identiti perniagaan anda.</p><div class="actions"><a class="btn primary" href="#contoh">Lihat contoh kerja</a><a class="btn secondary" href="#servis">Terokai servis</a></div><p class="note">Perbincangan projek secara dalam talian</p></div><div class="visual" role="img" aria-label="Ilustrasi susun atur website yang mempunyai bahagian utama dan tiga kad maklumat"><div class="browser-top"><i></i><i></i><i></i><span></span></div><div class="mock-nav"><span class="skeleton"></span><span class="skeleton"></span></div><div class="mock-hero"><div class="mock-copy"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="mock-image"></div></div><div class="mock-cards"><div class="mock-card"><span class="skeleton"></span><span class="skeleton"></span></div><div class="mock-card"><span class="skeleton"></span><span class="skeleton"></span></div><div class="mock-card"><span class="skeleton"></span><span class="skeleton"></span></div></div></div></div></div>
-  <section id="servis"><div class="wrap"><div class="section-head"><p class="eyebrow">Apa yang kami buat</p><h2>Ruang digital yang bekerja untuk anda.</h2><p>Setiap website dirancang supaya maklumat utama mudah dijumpai dan pelanggan tahu langkah seterusnya.</p></div><div class="service-grid"><article class="service"><span class="num">01 / REKA BENTUK</span><h3>Website perniagaan</h3><p>Halaman yang memperkenalkan servis, harga, waktu operasi dan cara pelanggan menghubungi anda.</p></article><article class="service"><span class="num">02 / PENGALAMAN</span><h3>Mesra telefon</h3><p>Susun atur yang disesuaikan untuk skrin telefon dan desktop, dengan navigasi yang jelas.</p></article><article class="service"><span class="num">03 / KEPERLUAN</span><h3>Fungsi yang sesuai</h3><p>Butang WhatsApp, borang atau bahagian khas boleh dirancang mengikut aliran kerja projek.</p></article></div></div></section>
-  <section class="portfolio" id="contoh"><div class="wrap feature"><div><p class="label">Contoh kerja</p><h2>Ruang Gunting</h2><p>Demo website untuk kedai gunting rambut. Lihat bagaimana maklumat servis, harga dan waktu operasi dipersembahkan dalam satu halaman yang mudah dilayari.</p><p><strong>Nota:</strong> Ini projek contoh. Nama, harga dan maklumat kedai dalam demo bukan perniagaan sebenar.</p><a class="btn primary" href="https://techcraft-empire.github.io/ruang-gunting-demo/" target="_blank" rel="noopener noreferrer">Buka website demo</a></div><div class="preview" aria-hidden="true"><div class="preview-head"><i></i><i></i><i></i></div><div class="preview-art"><small>DEMO BARBERSHOP</small><strong>Potongan kemas.<br>Rasa yakin.</strong></div></div></div></section>
-  <section id="cara-kerja"><div class="wrap"><div class="section-head"><p class="eyebrow">Cara kerja</p><h2>Daripada idea kepada website.</h2></div><div class="process"><div><b>01</b><h3>Ceritakan keperluan</h3><p>Kongsi jenis perniagaan, maklumat yang mahu dipaparkan dan contoh gaya yang anda suka.</p></div><div><b>02</b><h3>Rancang susun atur</h3><p>Kita tentukan struktur halaman dan fungsi yang sesuai sebelum kerja pembangunan bermula.</p></div><div><b>03</b><h3>Semak hasil</h3><p>Lihat website pada telefon dan desktop, kemudian beri maklum balas untuk kemasan akhir.</p></div></div></div></section>
-  <section class="contact" id="hubungi"><div class="wrap contact-inner"><div><p class="eyebrow" style="color:#7cb2ff">Mulakan perbualan</p><h2>Lihat apa yang boleh dibina.</h2><p>Lihat contoh kerja kami dahulu. Maklumat untuk menghubungi kami akan ditambah apabila saluran pertanyaan rasmi dimuktamadkan.</p></div><a class="btn" href="https://techcraft-empire.github.io/ruang-gunting-demo/" target="_blank" rel="noopener noreferrer">Lihat website demo</a></div></section>
-</main>
-<footer><div class="wrap"><span>© 2026 Techcraft Empire</span><span>Reka bentuk dan pembangunan web · Malaysia</span></div></footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101b2d" />
+    <title>TechCraft Empire — Reka bentuk & pembangunan website</title>
+    <meta
+      name="description"
+      content="Website yang jelas, kemas dan mudah digunakan. TechCraft Empire mereka bentuk website perniagaan, landing page dan pengalaman web untuk jenama di Malaysia."
+    />
+    <link rel="canonical" href="https://techcraft-empire.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ms_MY" />
+    <meta
+      property="og:title"
+      content="TechCraft Empire — Bina kehadiran yang meyakinkan."
+    />
+    <meta
+      property="og:description"
+      content="Reka bentuk dan pembangunan website untuk perniagaan di Malaysia. Terokai portfolio dan rancang website anda."
+    />
+    <meta property="og:url" content="https://techcraft-empire.github.io/" />
+    <meta
+      property="og:image"
+      content="https://techcraft-empire.github.io/assets/company-preview.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/company.css" />
+    <script src="assets/company.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 760px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding-block: 17px;
+          }
+          .nav nav {
+            display: flex;
+            position: static;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            box-shadow: none;
+            border: 0;
+            gap: 15px;
+          }
+          .nav nav > a {
+            padding: 6px 0;
+          }
+          .nav .nav-action {
+            margin: 0;
+            padding: 7px 10px;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#atas">Langkau ke kandungan</a>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a
+          class="brand"
+          href="#atas"
+          aria-label="TechCraft Empire, halaman utama"
+          ><img src="assets/mark.svg" width="38" height="38" alt="" /><span
+            >TechCraft<span class="brand-second">Empire</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+        <nav id="main-nav" aria-label="Navigasi utama">
+          <a href="#servis">Servis</a><a href="#contoh">Portfolio</a
+          ><a href="#cara-kerja">Cara kerja</a
+          ><a class="nav-action" href="#hubungi"
+            >Rancang projek <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="atas">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="blue-line"></span> REKA BENTUK & PEMBANGUNAN WEB
+            </p>
+            <h1>Bina kehadiran<br />yang <span>meyakinkan.</span></h1>
+            <p class="lead">
+              Website yang menyusun identiti, servis dan tindakan pelanggan dalam satu pengalaman yang jelas—dibina untuk kelihatan meyakinkan pada setiap skrin.
+            </p>
+            <div class="actions">
+              <a class="button" href="#contoh"
+                >Terokai portfolio <span aria-hidden="true">↗</span></a
+              ><a class="text-link" href="#hubungi"
+                >Rancang website anda <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <p class="hero-footnote">
+              Untuk perniagaan, penyedia servis & jenama di Malaysia.
+            </p>
+          </div>
+          <div class="hero-work">
+            <div class="work-label">
+              <span>DESIGN WITH PURPOSE.</span><span>01 — 02</span>
+            </div>
+            <a
+              class="hero-screen"
+              href="sela-kopi/"
+              aria-label="Lihat demo Sela Kopi"
+              ><div class="window-top">
+                <span class="dots" aria-hidden="true">● ● ●</span
+                ><span>SELA KOPI · CAFÉ CONCEPT</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/sela-preview.svg"
+                width="1348"
+                height="840"
+                alt="Preview website Sela Kopi dengan tipografi serif dan fotografi kopi"
+                fetchpriority="high"
+            /></a>
+            <div class="hero-note">
+              <span class="small-cross" aria-hidden="true">+</span>
+              <p>
+                Identiti berbeza.<br /><strong
+                  >Perhatian yang sama pada setiap detail.</strong
+                >
+              </p>
+              <a href="#contoh" aria-label="Lihat dua projek konsep"
+                >02 <span aria-hidden="true">↗</span
+                ><small>PROJEK KONSEP</small></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="capability-strip">
+        <div class="wrap">
+          <span>Reka bentuk tersuai</span
+          ><span>Responsif pada setiap skrin</span
+          ><span>Navigasi yang jelas</span
+          ><span>Fungsi mengikut keperluan</span>
+        </div>
+      </div>
+      <section class="section" id="servis">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / SERVIS</p>
+              <h2>Website yang cantik.<br />Tujuan yang jelas.</h2>
+            </div>
+            <p>
+              Dari pengenalan pertama hingga pertanyaan pelanggan, setiap
+              halaman ada peranannya.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 32 32">
+                  <rect x="4" y="6" width="24" height="20" rx="2" />
+                  <path d="M4 12h24M10 12v14M8 9h1m3 0h1" /></svg></span
+              ><span class="service-number">01</span>
+              <h3>Website perniagaan</h3>
+              <p>
+                Perkenalkan jenama, servis dan maklumat penting dalam susun atur
+                yang meyakinkan.
+              </p>
+              <ul>
+                <li>Profil syarikat & servis</li>
+                <li>Portfolio & katalog</li>
+                <li>Paparan telefon & desktop</li>
+              </ul>
+            </article>
+            <article class="service">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 32 32">
+                  <path
+                    d="M6 7h20v18H6zM10 12h12m-12 5h8m-8 4h5M22 18l6 6-4 1-1 4z"
+                  /></svg></span
+              ><span class="service-number">02</span>
+              <h3>Landing page</h3>
+              <p>
+                Satukan mesej utama dan tindakan pelanggan untuk produk, servis
+                atau kempen anda.
+              </p>
+              <ul>
+                <li>Kandungan yang fokus</li>
+                <li>CTA yang mudah dijumpai</li>
+                <li>Asas metadata & SEO</li>
+              </ul>
+            </article>
+            <article class="service">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 32 32">
+                  <path d="M5 9h22M5 23h22" />
+                  <rect x="10" y="5" width="5" height="8" rx="1" />
+                  <rect x="19" y="19" width="5" height="8" rx="1" />
+                  <path d="M5 16h22" /></svg></span
+              ><span class="service-number">03</span>
+              <h3>Fungsi yang relevan</h3>
+              <p>
+                Tambahkan fungsi yang membantu pelanggan meneroka pilihan dan
+                membuat pertanyaan.
+              </p>
+              <ul>
+                <li>Menu & penapis kategori</li>
+                <li>Aliran pertanyaan WhatsApp</li>
+                <li>Borang mengikut skop</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section portfolio" id="contoh">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / SELECTED WORK</p>
+              <h2>Berbeza bisnes.<br />Berbeza pendekatan.</h2>
+            </div>
+            <p>
+              Setiap bisnes perlukan bahasa visual dan aliran yang berbeza. Dua konsep ini menunjukkan bagaimana pendekatan itu diterjemahkan ke web.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project">
+              <a
+                class="project-preview cafe-preview"
+                href="sela-kopi/"
+                aria-label="Buka live demo Sela Kopi"
+                ><span class="project-badge">CONCEPT PROJECT</span>
+                <div class="preview-browser">
+                  <div class="preview-bar">
+                    <span>● ● ●</span><span>sela kopi</span>
+                  </div>
+                  <img
+                    src="assets/sela-preview.svg"
+                    width="1348"
+                    height="840"
+                    alt="Paparan halaman utama website Sela Kopi"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="preview-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-meta">
+                <span>CAFÉ & DINING</span><span>01</span>
+              </div>
+              <div class="project-title">
+                <h3>Sela Kopi</h3>
+                <a class="text-link" href="sela-kopi/"
+                  >Lihat demo <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <p>
+                Pengalaman café yang hangat, dengan menu interaktif dan aliran
+                pertanyaan tempahan.
+              </p>
+              <ul class="tags" aria-label="Ciri Sela Kopi">
+                <li>3 halaman</li>
+                <li>Penapis menu</li>
+                <li>Simulasi tempahan</li>
+              </ul>
+            </article>
+            <article class="project">
+              <a
+                class="project-preview barber-preview"
+                href="https://techcraft-empire.github.io/ruang-gunting-demo/"
+                aria-label="Buka live demo Ruang Gunting"
+                ><span class="project-badge">DEMO PROJECT</span>
+                <div class="preview-browser">
+                  <div class="preview-bar">
+                    <span>● ● ●</span><span>ruang gunting</span>
+                  </div>
+                  <img
+                    src="assets/ruang-preview.svg"
+                    width="1348"
+                    height="840"
+                    alt="Paparan website Ruang Gunting, bertema gelap dan emas"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="preview-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-meta">
+                <span>BARBERSHOP & GROOMING</span><span>02</span>
+              </div>
+              <div class="project-title">
+                <h3>Ruang Gunting</h3>
+                <a
+                  class="text-link"
+                  href="https://techcraft-empire.github.io/ruang-gunting-demo/"
+                  >Lihat demo <span aria-hidden="true">↗</span></a
+                >
+              </div>
+              <p>
+                Identiti yang tegas dengan senarai servis, harga yang jelas dan
+                pengalaman melayari yang terus kepada tujuan.
+              </p>
+              <ul class="tags" aria-label="Ciri Ruang Gunting">
+                <li>Servis & harga</li>
+                <li>Waktu operasi</li>
+                <li>Responsif</li>
+              </ul>
+            </article>
+          </div>
+          <p class="portfolio-note">
+            <span aria-hidden="true">↳</span> Semua projek di atas ialah demo
+            portfolio untuk perniagaan rekaan, bukan projek pelanggan berbayar.
+          </p>
+        </div>
+      </section>
+      <section class="section approach">
+        <div class="wrap approach-grid">
+          <div>
+            <p class="eyebrow">03 / PENDEKATAN KAMI</p>
+            <h2>Ringkas pada mata.<br />Teliti pada fungsi.</h2>
+            <p class="approach-intro">
+              Website yang baik bermula dengan memahami apa yang pelanggan anda
+              perlukan.
+            </p>
+            <a class="text-link" href="#hubungi"
+              >Mari rancang keperluan anda <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="principles">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Identiti anda, dengan jelas.</h3>
+                <p>
+                  Warna, tipografi dan kandungan disusun supaya jenama anda
+                  terasa konsisten.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Selesa digunakan, di mana-mana.</h3>
+                <p>
+                  Menu, butang dan maklumat utama direka untuk telefon, tablet
+                  dan desktop.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Skop yang kita fahami bersama.</h3>
+                <p>
+                  Halaman, fungsi dan hasil kerja dipersetujui sebelum
+                  pembangunan dimulakan.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section process-section" id="cara-kerja">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / CARA KERJA</p>
+              <h2>Dari perbualan<br />ke pelancaran.</h2>
+            </div>
+            <p>
+              Proses yang mudah diikuti, dengan ruang untuk anda menyemak dan
+              memberi maklum balas.
+            </p>
+          </div>
+          <ol class="process">
+            <li>
+              <span>01 / KENALI</span>
+              <h3>Fahami keperluan</h3>
+              <p>
+                Kongsi perniagaan, sasaran pelanggan dan tujuan website anda.
+              </p>
+            </li>
+            <li>
+              <span>02 / RANCANG</span>
+              <h3>Tentukan arah</h3>
+              <p>Persetujui struktur, gaya visual, fungsi dan skop projek.</p>
+            </li>
+            <li>
+              <span>03 / BINA</span>
+              <h3>Bangun & semak</h3>
+              <p>Semak halaman dan fungsi pada skrin besar serta telefon.</p>
+            </li>
+            <li>
+              <span>04 / LANCAR</span>
+              <h3>Sedia untuk dikongsi</h3>
+              <p>Lengkapkan semakan akhir, penerbitan dan panduan asas.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="contact" id="hubungi">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="eyebrow">PROJEK ANDA YANG SETERUSNYA</p>
+            <h2>Idea sudah ada?<br />Mari beri ia <span>bentuk.</span></h2>
+            <p>
+              Mulakan dengan ringkasan keperluan. Pilih jenis website dan
+              ceritakan sedikit tentang perniagaan anda.
+            </p>
+          </div>
+          <div class="contact-action">
+            <a class="button light" href="brief.html"
+              >Sediakan ringkasan projek <span aria-hidden="true">↗</span></a
+            >
+            <p>Ambil masa sekitar 2 minit.<br />Tiada bayaran atau komitmen.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="brand" href="#atas"
+          ><img src="assets/mark.svg" width="38" height="38" alt="" /><span
+            >TechCraft<span class="brand-second">Empire</span></span
+          ></a
+        >
+        <p>Reka bentuk yang jelas.<br />Pengalaman yang lebih baik.</p>
+        <nav aria-label="Navigasi footer">
+          <a href="#servis">Servis</a><a href="#contoh">Portfolio</a
+          ><a href="brief.html">Rancang projek</a>
+        </nav>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 TechCraft Empire</span
+        ><span>Reka bentuk & pembangunan web · Malaysia</span
+        ><a href="#atas">Kembali ke atas ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>
