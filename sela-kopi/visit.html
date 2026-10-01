@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en-MY">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>Plan a visit — Sela Kopi · Portfolio Demo</title>
+    <meta
+      name="description"
+      content="Explore illustrative café hours and try a table enquiry with a WhatsApp-style message preview. Sela Kopi is a fictional portfolio demo."
+    />
+    <link
+      rel="canonical"
+      href="https://techcraft-empire.github.io/sela-kopi/visit.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_MY" />
+    <meta property="og:title" content="Plan a visit — Sela Kopi" />
+    <meta
+      property="og:description"
+      content="A fictional Malaysian café concept by TechCraft Empire. Coffee, comfort food and a little room to slow down."
+    />
+    <meta
+      property="og:url"
+      content="https://techcraft-empire.github.io/sela-kopi/visit.html"
+    />
+    <meta
+      property="og:image"
+      content="https://techcraft-empire.github.io/sela-kopi/assets/coffee-toast-1440.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/sela-mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../assets/fonts/dm-serif.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/cafe.css" />
+    <script src="assets/cafe.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 760px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding-block: 15px;
+          }
+          .nav nav {
+            display: flex;
+            position: static;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            gap: 12px;
+            border: 0;
+            box-shadow: none;
+          }
+          .nav nav a {
+            padding: 7px;
+          }
+          .nav nav a:last-child {
+            margin: 0;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="demo-banner">
+      Portfolio demo · A fictional café by
+      <a href="../#contoh">TechCraft Empire ↗</a>
+    </div>
+    <header class="cafe-header">
+      <div class="wrap nav">
+        <a class="wordmark" href="./" aria-label="Sela Kopi home"
+          ><span class="sun" aria-hidden="true">✳</span> sela kopi<span
+            class="wordmark-dot"
+            >.</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-controls="cafe-nav"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="cafe-nav" aria-label="Main navigation">
+          <a href="./">Home</a><a href="menu.html">Our menu</a
+          ><a href="./#our-space">Our space</a
+          ><a href="visit.html" aria-current="page">Plan a visit</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap visit-intro">
+        <div>
+          <p class="eyebrow">MAKE A LITTLE ROOM IN YOUR DAY</p>
+          <h1>We'll put<br />the kettle on.</h1>
+        </div>
+        <p>
+          A coffee with a friend, a catch-up with a few.<br />Try planning your
+          next little pause.
+        </p>
+      </section>
+      <div class="wrap visit-layout">
+        <section class="visit-info" aria-labelledby="hours-heading">
+          <p class="eyebrow">THE RHYTHM OF OUR WEEK</p>
+          <h2 id="hours-heading">Time for a visit.</h2>
+          <dl class="hours">
+            <div>
+              <dt>Monday, Wednesday & Thursday</dt>
+              <dd>9am – 6pm</dd>
+            </div>
+            <div>
+              <dt>Friday – Sunday</dt>
+              <dd>9am – 8pm</dd>
+            </div>
+            <div>
+              <dt>Tuesday</dt>
+              <dd>Taking a break</dd>
+            </div>
+          </dl>
+          <div class="location-note">
+            <span aria-hidden="true">↗</span>
+            <div>
+              <h3>Imagined in Ipoh, Perak.</h3>
+              <p>
+                This is a fictional café concept. There is no physical outlet,
+                map pin or operating phone number.
+              </p>
+            </div>
+          </div>
+          <img
+            class="visit-photo"
+            src="assets/cafe-interior-720.webp"
+            width="720"
+            height="480"
+            alt="Sunlit seating in the fictional Sela Kopi café"
+            loading="lazy"
+          />
+        </section>
+        <section class="booking-section" aria-labelledby="booking-heading">
+          <p class="eyebrow">TRY THE BOOKING EXPERIENCE</p>
+          <h2 id="booking-heading">A table for…</h2>
+          <p class="booking-intro">
+            Choose a day and we'll prepare an enquiry message for you to
+            preview.
+          </p>
+          <form id="booking-form">
+            <div class="form-row">
+              <div class="field">
+                <label for="visit-date">Your day</label
+                ><input
+                  type="date"
+                  id="visit-date"
+                  name="date"
+                  required
+                  aria-describedby="date-help"
+                /><small id="date-help">Closed on Tuesdays.</small>
+              </div>
+              <div class="field">
+                <label for="party-size">Your people</label
+                ><select id="party-size" name="party">
+                  <option value="1">Just me</option>
+                  <option value="2" selected>2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7">7 people</option>
+                  <option value="8">8 people</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="visit-time">Your time</label
+              ><select id="visit-time" name="time" required>
+                <option value="">Choose a day first</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="visit-note"
+                >Anything else? <span>(optional)</span></label
+              ><textarea
+                id="visit-note"
+                name="note"
+                rows="3"
+                maxlength="300"
+                placeholder="A preferred corner, or a special occasion…"
+              ></textarea>
+            </div>
+            <p class="form-error" id="booking-error" role="alert"></p>
+            <button class="button full" type="submit">
+              Preview WhatsApp enquiry <span aria-hidden="true">↗</span>
+            </button>
+            <p class="demo-form-note">
+              Demo only. No message is sent, no table is reserved, and nothing
+              is stored. Please use sample details.
+            </p>
+            <noscript
+              ><p>
+                JavaScript is needed for the enquiry preview. This demo does not
+                accept real reservations.
+              </p></noscript
+            >
+          </form>
+        </section>
+      </div>
+      <section class="faq wrap">
+        <div>
+          <p class="eyebrow">BEFORE YOU DROP BY</p>
+          <h2>A few little things.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is this an actual café?</summary>
+            <p>
+              No. Sela Kopi is a fictional concept created to demonstrate
+              TechCraft Empire's web design and development. The menu, hours and
+              imagery are illustrative.
+            </p>
+          </details>
+          <details>
+            <summary>What happens when I try the booking form?</summary>
+            <p>
+              You can choose an illustrative date, time and party size, then
+              preview a formatted enquiry message. No message is sent and no
+              booking is made.
+            </p>
+          </details>
+          <details>
+            <summary>Can this work for a real café?</summary>
+            <p>
+              The design demonstrates a menu and enquiry flow. For a real
+              business, its confirmed menu, opening hours and contact channel
+              can be connected to the website.
+            </p>
+          </details>
+        </div>
+      </section>
+      <dialog
+        class="enquiry-dialog"
+        id="enquiry-dialog"
+        aria-labelledby="dialog-heading"
+      >
+        <button
+          class="dialog-close"
+          type="button"
+          aria-label="Close enquiry preview"
+        >
+          ×
+        </button>
+        <p class="eyebrow">MESSAGE PREVIEW · DEMO ONLY</p>
+        <h2 id="dialog-heading">Your little plan.</h2>
+        <p class="dialog-description">
+          This is how the enquiry could look in WhatsApp. Nothing has been sent.
+        </p>
+        <label for="enquiry-text">Enquiry message</label
+        ><textarea id="enquiry-text" readonly rows="7"></textarea
+        ><button class="button full" id="copy-enquiry" type="button">
+          Copy sample message
+        </button>
+        <p id="copy-status" role="status"></p>
+        <a class="text-link" href="../#contoh">Explore TechCraft Empire ↗</a>
+      </dialog>
+    </main>
+    <footer class="cafe-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="wordmark" href="./"
+            ><span class="sun" aria-hidden="true">✳</span> sela kopi.</a
+          >
+          <p>
+            A little room to slow down.<br />A café concept set in Ipoh,
+            Malaysia.
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="menu.html">Our menu</a><a href="./#our-space">Our space</a
+          ><a href="visit.html">Hours & enquiries</a>
+        </nav>
+        <div class="footer-hours">
+          <span>TAKE A LITTLE SELA.</span>
+          <p>
+            Mon, Wed & Thu · 9am – 6pm<br />Fri – Sun · 9am – 8pm<br />Tuesday ·
+            Taking a break
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>Concept website by <a href="../#contoh">TechCraft Empire ↗</a></p>
+        <p>Fictional business, menu & hours. No real bookings or payments.</p>
+      </div>
+    </footer>
+  </body>
+</html>

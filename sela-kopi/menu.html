@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en-MY">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>Our menu — Sela Kopi · Portfolio Demo</title>
+    <meta
+      name="description"
+      content="Browse the Sela Kopi concept menu: coffee, Malaysian café favourites and sweet treats, with RM prices and category filters."
+    />
+    <link
+      rel="canonical"
+      href="https://techcraft-empire.github.io/sela-kopi/menu.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_MY" />
+    <meta property="og:title" content="Our menu — Sela Kopi" />
+    <meta
+      property="og:description"
+      content="A fictional Malaysian café concept by TechCraft Empire. Coffee, comfort food and a little room to slow down."
+    />
+    <meta
+      property="og:url"
+      content="https://techcraft-empire.github.io/sela-kopi/menu.html"
+    />
+    <meta
+      property="og:image"
+      content="https://techcraft-empire.github.io/sela-kopi/assets/coffee-toast-1440.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/sela-mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../assets/fonts/dm-serif.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/cafe.css" />
+    <script src="assets/cafe.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 760px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding-block: 15px;
+          }
+          .nav nav {
+            display: flex;
+            position: static;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            gap: 12px;
+            border: 0;
+            box-shadow: none;
+          }
+          .nav nav a {
+            padding: 7px;
+          }
+          .nav nav a:last-child {
+            margin: 0;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="demo-banner">
+      Portfolio demo · A fictional café by
+      <a href="../#contoh">TechCraft Empire ↗</a>
+    </div>
+    <header class="cafe-header">
+      <div class="wrap nav">
+        <a class="wordmark" href="./" aria-label="Sela Kopi home"
+          ><span class="sun" aria-hidden="true">✳</span> sela kopi<span
+            class="wordmark-dot"
+            >.</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-controls="cafe-nav"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="cafe-nav" aria-label="Main navigation">
+          <a href="./">Home</a
+          ><a href="menu.html" aria-current="page">Our menu</a
+          ><a href="./#our-space">Our space</a
+          ><a href="visit.html">Plan a visit</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">A LITTLE OF WHAT YOU LOVE</p>
+        <h1>Something good.<br />For every kind of day.</h1>
+        <p>From the first sip to the last bite. Take your time choosing.</p>
+      </section>
+      <section class="menu-section wrap" aria-label="Café menu">
+        <div class="menu-tools" hidden>
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filter menu by category"
+          >
+            <button data-filter="all" aria-pressed="true">Everything</button
+            ><button data-filter="coffee" aria-pressed="false">Coffee</button
+            ><button data-filter="other" aria-pressed="false">Not coffee</button
+            ><button data-filter="bites" aria-pressed="false">
+              Light bites</button
+            ><button data-filter="sweet" aria-pressed="false">
+              Something sweet
+            </button>
+          </div>
+          <div class="search-field">
+            <label for="menu-search">Find a favourite</label
+            ><input
+              type="search"
+              id="menu-search"
+              placeholder="Try latte, kaya, pandan…"
+              maxlength="80"
+            />
+          </div>
+        </div>
+        <p id="menu-status" class="menu-status" role="status">
+          12 items · all prices in RM
+        </p>
+        <div class="menu-layout">
+          <div class="menu-list">
+            <section
+              class="menu-group"
+              data-group="coffee"
+              aria-labelledby="heading-coffee"
+            >
+              <div class="menu-group-title">
+                <h2 id="heading-coffee">Coffee</h2>
+                <span aria-hidden="true">✳</span>
+              </div>
+              <div class="menu-items">
+                <article class="menu-item" data-category="coffee">
+                  <div class="item-top">
+                    <h3>Espresso</h3>
+                    <span class="price">RM8</span>
+                  </div>
+                  <p>A small, full-bodied shot.</p>
+                  <small>Coffee, kept simple</small>
+                </article>
+                <article class="menu-item" data-category="coffee">
+                  <div class="item-top">
+                    <h3>Long Black</h3>
+                    <span class="price">RM10</span>
+                  </div>
+                  <p>Espresso over hot water. Clean and bold.</p>
+                  <small>Hot / iced</small>
+                </article>
+                <article class="menu-item" data-category="coffee">
+                  <div class="item-top">
+                    <h3>Flat White</h3>
+                    <span class="price">RM12</span>
+                  </div>
+                  <p>Double espresso with silky steamed milk.</p>
+                  <small>Contains dairy</small>
+                </article>
+                <article class="menu-item" data-category="coffee">
+                  <div class="item-top">
+                    <h3>Gula Melaka Latte</h3>
+                    <span class="price">RM14</span>
+                  </div>
+                  <p>Espresso, milk and a mellow palm-sugar finish.</p>
+                  <small>House pick · dairy</small>
+                </article>
+              </div>
+            </section>
+            <section
+              class="menu-group"
+              data-group="other"
+              aria-labelledby="heading-other"
+            >
+              <div class="menu-group-title">
+                <h2 id="heading-other">Not coffee</h2>
+                <span aria-hidden="true">✳</span>
+              </div>
+              <div class="menu-items">
+                <article class="menu-item" data-category="other">
+                  <div class="item-top">
+                    <h3>Iced Matcha Latte</h3>
+                    <span class="price">RM15</span>
+                  </div>
+                  <p>Earthy matcha, fresh milk and a gentle sweetness.</p>
+                  <small>Contains dairy</small>
+                </article>
+                <article class="menu-item" data-category="other">
+                  <div class="item-top">
+                    <h3>Chocolate</h3>
+                    <span class="price">RM13</span>
+                  </div>
+                  <p>Comfort in a cup, served hot or over ice.</p>
+                  <small>Contains dairy</small>
+                </article>
+                <article class="menu-item" data-category="other">
+                  <div class="item-top">
+                    <h3>Limau Asam Boi</h3>
+                    <span class="price">RM9</span>
+                  </div>
+                  <p>Bright lime and salted plum, poured over ice.</p>
+                  <small>Refreshing</small>
+                </article>
+              </div>
+            </section>
+            <section
+              class="menu-group"
+              data-group="bites"
+              aria-labelledby="heading-bites"
+            >
+              <div class="menu-group-title">
+                <h2 id="heading-bites">Light bites</h2>
+                <span aria-hidden="true">✳</span>
+              </div>
+              <div class="menu-items">
+                <article class="menu-item" data-category="bites">
+                  <div class="item-top">
+                    <h3>Kaya Butter Toast</h3>
+                    <span class="price">RM12</span>
+                  </div>
+                  <p>Thick sourdough, pandan kaya and butter.</p>
+                  <small>Contains wheat, egg & dairy</small>
+                </article>
+                <article class="menu-item" data-category="bites">
+                  <div class="item-top">
+                    <h3>Egg & Cheese Toastie</h3>
+                    <span class="price">RM18</span>
+                  </div>
+                  <p>Soft scrambled eggs and melted cheese on toast.</p>
+                  <small>Contains wheat, egg & dairy</small>
+                </article>
+                <article class="menu-item" data-category="bites">
+                  <div class="item-top">
+                    <h3>Mushroom Sourdough</h3>
+                    <span class="price">RM19</span>
+                  </div>
+                  <p>Sautéed mushrooms, garlic butter and fresh herbs.</p>
+                  <small>Contains wheat & dairy</small>
+                </article>
+              </div>
+            </section>
+            <section
+              class="menu-group"
+              data-group="sweet"
+              aria-labelledby="heading-sweet"
+            >
+              <div class="menu-group-title">
+                <h2 id="heading-sweet">Something sweet</h2>
+                <span aria-hidden="true">✳</span>
+              </div>
+              <div class="menu-items">
+                <article class="menu-item" data-category="sweet">
+                  <div class="item-top">
+                    <h3>Pandan Butter Cake</h3>
+                    <span class="price">RM10</span>
+                  </div>
+                  <p>A soft slice with the familiar fragrance of pandan.</p>
+                  <small>Contains wheat, egg & dairy</small>
+                </article>
+                <article class="menu-item" data-category="sweet">
+                  <div class="item-top">
+                    <h3>Banana Walnut Loaf</h3>
+                    <span class="price">RM11</span>
+                  </div>
+                  <p>Banana loaf with toasted walnut pieces.</p>
+                  <small>Contains wheat, egg, dairy & nuts</small>
+                </article>
+              </div>
+            </section>
+            <div class="empty-state" id="empty-state" hidden>
+              <h2>No match just yet.</h2>
+              <p>Try a different word or browse the whole menu.</p>
+              <button class="button" id="reset-menu" type="button">
+                Show everything
+              </button>
+            </div>
+          </div>
+          <aside class="menu-aside">
+            <img
+              src="assets/coffee-toast-720.webp"
+              width="720"
+              height="480"
+              alt="Coffee paired with kaya toast"
+              loading="lazy"
+            />
+            <div>
+              <p class="eyebrow">MAKE IT A MOMENT</p>
+              <h2>A cup.<br />A bite.<br />A little pause.</h2>
+              <p>Take a seat and enjoy something familiar.</p>
+              <a class="text-link" href="visit.html">Plan a visit ↗</a>
+            </div>
+          </aside>
+        </div>
+        <p class="menu-footnote">
+          All items and prices are illustrative. This café is fictional.
+          Ingredient notes are examples, not a complete allergen list.
+        </p>
+      </section>
+    </main>
+    <footer class="cafe-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="wordmark" href="./"
+            ><span class="sun" aria-hidden="true">✳</span> sela kopi.</a
+          >
+          <p>
+            A little room to slow down.<br />A café concept set in Ipoh,
+            Malaysia.
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="menu.html">Our menu</a><a href="./#our-space">Our space</a
+          ><a href="visit.html">Hours & enquiries</a>
+        </nav>
+        <div class="footer-hours">
+          <span>TAKE A LITTLE SELA.</span>
+          <p>
+            Mon, Wed & Thu · 9am – 6pm<br />Fri – Sun · 9am – 8pm<br />Tuesday ·
+            Taking a break
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>Concept website by <a href="../#contoh">TechCraft Empire ↗</a></p>
+        <p>Fictional business, menu & hours. No real bookings or payments.</p>
+      </div>
+    </footer>
+  </body>
+</html>

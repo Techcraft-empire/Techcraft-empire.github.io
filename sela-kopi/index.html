@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-MY">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e8" />
+    <title>A little pause. A better day. — Sela Kopi · Portfolio Demo</title>
+    <meta
+      name="description"
+      content="Explore Sela Kopi, a fictional Malaysian café concept with a warm design, interactive menu and booking enquiry preview."
+    />
+    <link
+      rel="canonical"
+      href="https://techcraft-empire.github.io/sela-kopi/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_MY" />
+    <meta
+      property="og:title"
+      content="A little pause. A better day. — Sela Kopi"
+    />
+    <meta
+      property="og:description"
+      content="A fictional Malaysian café concept by TechCraft Empire. Coffee, comfort food and a little room to slow down."
+    />
+    <meta
+      property="og:url"
+      content="https://techcraft-empire.github.io/sela-kopi/"
+    />
+    <meta
+      property="og:image"
+      content="https://techcraft-empire.github.io/sela-kopi/assets/coffee-toast-1440.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/sela-mark.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="../assets/fonts/dm-serif.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/cafe.css" />
+    <script src="assets/cafe.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 760px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding-block: 15px;
+          }
+          .nav nav {
+            display: flex;
+            position: static;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            gap: 12px;
+            border: 0;
+            box-shadow: none;
+          }
+          .nav nav a {
+            padding: 7px;
+          }
+          .nav nav a:last-child {
+            margin: 0;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="demo-banner">
+      Portfolio demo · A fictional café by
+      <a href="../#contoh">TechCraft Empire ↗</a>
+    </div>
+    <header class="cafe-header">
+      <div class="wrap nav">
+        <a class="wordmark" href="./" aria-label="Sela Kopi home"
+          ><span class="sun" aria-hidden="true">✳</span> sela kopi<span
+            class="wordmark-dot"
+            >.</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-controls="cafe-nav"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="cafe-nav" aria-label="Main navigation">
+          <a href="./" aria-current="page">Home</a
+          ><a href="menu.html">Our menu</a><a href="./#our-space">Our space</a
+          ><a href="visit.html">Plan a visit</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="cafe-hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">COFFEE. COMFORT. A LITTLE SELA.</p>
+          <h1>A little pause.<br />A better day.</h1>
+          <p class="intro">
+            Good coffee, familiar flavours, and a seat that feels like yours.
+            Take a breather. You're in good company.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="menu.html"
+              >Find your favourites <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="visit.html">Plan a visit →</a>
+          </div>
+          <div class="hero-location">
+            <span class="tiny-sun" aria-hidden="true">✳</span
+            ><span
+              >IMAGINED IN IPOH, MALAYSIA<br /><small
+                >Made for unhurried mornings.</small
+              ></span
+            >
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img
+            src="assets/coffee-toast-1440.webp"
+            srcset="
+              assets/coffee-toast-720.webp   720w,
+              assets/coffee-toast-1440.webp 1440w
+            "
+            sizes="(max-width:760px) 100vw, 55vw"
+            width="1440"
+            height="960"
+            alt="A cream cup of coffee and kaya butter toast in warm morning sunlight"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <span>THE SIMPLE THINGS, DONE WELL.</span
+            ><span>01 / MORNING RITUAL</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="cafe-ribbon">
+        <div class="wrap">
+          <span>Coffee, your way.</span><span aria-hidden="true">✳</span
+          ><span>A taste of home.</span><span aria-hidden="true">✳</span
+          ><span>Stay a little longer.</span>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FROM OUR LITTLE KITCHEN</p>
+            <h2>Your next<br />favourite ritual.</h2>
+          </div>
+          <a class="text-link" href="menu.html"
+            >Explore the full menu <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="house-picks">
+          <article>
+            <span class="pick-number">01 / COFFEE</span>
+            <div>
+              <h3>Gula Melaka Latte</h3>
+              <p>Espresso, fresh milk and a little Malaysian sweetness.</p>
+            </div>
+            <strong>RM14</strong>
+          </article>
+          <article>
+            <span class="pick-number">02 / SOMETHING FAMILIAR</span>
+            <div>
+              <h3>Kaya Butter Toast</h3>
+              <p>
+                Thick sourdough, pandan kaya and a generous slice of butter.
+              </p>
+            </div>
+            <strong>RM12</strong>
+          </article>
+          <article>
+            <span class="pick-number">03 / A SWEET FINISH</span>
+            <div>
+              <h3>Pandan Butter Cake</h3>
+              <p>Soft, fragrant and just right with your second cup.</p>
+            </div>
+            <strong>RM10</strong>
+          </article>
+        </div>
+      </section>
+      <section class="space-section" id="our-space">
+        <div class="wrap space-grid">
+          <figure class="space-image">
+            <img
+              src="assets/cafe-interior-1440.webp"
+              srcset="
+                assets/cafe-interior-720.webp   720w,
+                assets/cafe-interior-1440.webp 1440w
+              "
+              sizes="(max-width:760px) 100vw, 50vw"
+              width="1440"
+              height="960"
+              loading="lazy"
+              alt="A quiet café concept with wooden tables, olive seating and a sunlit window"
+            />
+            <figcaption>A WARM CORNER. A MOMENT TO YOURSELF.</figcaption>
+          </figure>
+          <div class="space-copy">
+            <p class="eyebrow">A SPACE BETWEEN THE BUSY BITS</p>
+            <h2>Pull up a chair.<br />Make a little time.</h2>
+            <p>
+              Sela means a pause or an interval. That's the idea behind our
+              little café: a place for the first coffee of the day, a long
+              catch-up, or a quiet moment in between.
+            </p>
+            <p>
+              Familiar local flavours meet a simple café menu. Nothing rushed.
+              Just something good on the table.
+            </p>
+            <div class="space-notes">
+              <span>For slow mornings</span><span>For good conversations</span>
+            </div>
+            <a class="text-link" href="visit.html">Make room in your day ↗</a>
+          </div>
+        </div>
+      </section>
+      <section class="visit-cta wrap">
+        <span class="large-sun" aria-hidden="true">✳</span>
+        <div>
+          <p class="eyebrow">THERE'S A SEAT FOR YOU</p>
+          <h2>Same time. Your place.</h2>
+          <p>See our hours and try the table enquiry experience.</p>
+        </div>
+        <a class="button" href="visit.html"
+          >Plan your coffee break <span aria-hidden="true">↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="cafe-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="wordmark" href="./"
+            ><span class="sun" aria-hidden="true">✳</span> sela kopi.</a
+          >
+          <p>
+            A little room to slow down.<br />A café concept set in Ipoh,
+            Malaysia.
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="menu.html">Our menu</a><a href="./#our-space">Our space</a
+          ><a href="visit.html">Hours & enquiries</a>
+        </nav>
+        <div class="footer-hours">
+          <span>TAKE A LITTLE SELA.</span>
+          <p>
+            Mon, Wed & Thu · 9am – 6pm<br />Fri – Sun · 9am – 8pm<br />Tuesday ·
+            Taking a break
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>Concept website by <a href="../#contoh">TechCraft Empire ↗</a></p>
+        <p>Fictional business, menu & hours. No real bookings or payments.</p>
+      </div>
+    </footer>
+  </body>
+</html>
